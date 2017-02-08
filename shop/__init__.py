@@ -5,10 +5,10 @@ import index_page as index
 ETSY_API_KEY = os.environ["ETSY_API_KEY"]
 
 def index_page():
-	return index.html(ETSY_API_KEY)
+	return index.html()
 	
 def products_page():
-	return products.html()
+	return products.html(ETSY_API_KEY)
 
 def debug(x):
 	file = open("/tmp/shopteti", 'w')
