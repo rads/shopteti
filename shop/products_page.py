@@ -1,8 +1,9 @@
 import requests
+import nav_bar
 
 def html(api_key):
 	json = get_data(api_key)
-	return format_data(json)
+	return nav_bar.html() + format_data(json)
 
 def get_data(api_key):
 	response = requests.get('https://openapi.etsy.com/v2/shops/shopteti/listings/active?api_key='+ api_key + '&includes=Images')
