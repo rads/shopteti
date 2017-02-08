@@ -2,9 +2,12 @@ import requests
 import os
 ETSY_API_KEY = os.environ["ETSY_API_KEY"]
 
-def images():
+def index_page():
 	json = get_data()
 	return format_data(json)
+
+def products_page():
+	return 'hello world'
 
 def get_data():
 	response = requests.get('https://openapi.etsy.com/v2/shops/shopteti/listings/active?api_key='+ ETSY_API_KEY + '&includes=Images')
