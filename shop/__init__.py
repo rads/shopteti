@@ -1,26 +1,14 @@
-import requests
 import os
+import products_page as products
+import index_page as index
+
 ETSY_API_KEY = os.environ["ETSY_API_KEY"]
 
 def index_page():
-	json = get_data()
-	return format_data(json)
-
+	return index.html(ETSY_API_KEY)
+	
 def products_page():
-	return 'hello world'
-
-def get_data():
-	response = requests.get('https://openapi.etsy.com/v2/shops/shopteti/listings/active?api_key='+ ETSY_API_KEY + '&includes=Images')
-	json = response.json()
-	return json
-
-def format_data(json):
-	results = json["results"]
-	image_tags = []
-	for listing in results:
-		image_url = listing["Images"][0]["url_170x135"]
-		image_tags.append("<img src=" + image_url + '>')
-	return "\n".join(image_tags)
+	return products.html()
 
 def debug(x):
 	file = open("/tmp/shopteti", 'w')
