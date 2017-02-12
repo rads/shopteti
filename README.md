@@ -12,14 +12,29 @@
 
 - Deleted Django, installed Falcon.
 - Learned how to use Etsy API
-- Learned how to make HTTPS requests locally (with curl) and the browser.
+- Learned how to make HTTP requests locally (with curl) and the browser.
 - Learned how to make a web server with Python.
 - Learned how to make own scripts.
 - Discussed modularity. 
 
-### Future improvements
+#### Future improvements
 
 - Styling with HTML/CSS
 - Store Etsy API results in a database or cache
 - Add Google Analytics
 - Add performance monitoring
+
+### February 8th, 2017
+
+#### What problem are we trying to solve?
+
+- Adding a layout
+    - lookbooks on homepage
+    - social media links on top
+    - seperate product page
+    - toolbar on top
+
+#### For next week?
+
+- Expand html framework
+-

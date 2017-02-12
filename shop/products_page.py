@@ -1,5 +1,6 @@
 import requests
 import nav_bar
+from html import *
 
 def html(api_key):
 	json = get_data(api_key)
@@ -15,5 +16,5 @@ def format_data(json):
 	image_tags = []
 	for listing in results:
 		image_url = listing["Images"][0]["url_170x135"]
-		image_tags.append("<img src=" + image_url + '>')
+		image_tags.append(img(image_url))
 	return "\n".join(image_tags)
