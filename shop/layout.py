@@ -1,4 +1,5 @@
 from html import *
+import nav_bar
 
 def html(content):
     return html5([
@@ -6,7 +7,9 @@ def html(content):
             title('ShopTeti'),
             stylesheets()
         ]),
-        body('', content)
+        body('', [
+            nav_bar.html()
+        ] + content)
     ])
 
 def stylesheets():

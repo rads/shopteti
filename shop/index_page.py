@@ -1,11 +1,9 @@
 import requests
-import nav_bar
 import layout
 from html import *
 
 def html():
 	return layout.html([
-        nav_bar.html(),
         lookbook()
     ])
 
