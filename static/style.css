@@ -1,2 +1,7 @@
-body {
+.Logo {
+  width: 250px;
+  height: 250px;
+  background: url(/static/logo.jpg) no-repeat;
+  background-size: 100%;
+  text-indent: -5000px;
 }

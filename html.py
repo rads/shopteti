@@ -33,5 +33,8 @@ def head(content):
 def title(content):
 	return '<title>' + content_str(content) + '</title>'
 
+def h1(attributes, content):
+	return '<h1 ' + attributes + '>' + content_str(content) + '</h1>'
+
 def html5(content):
     return '<!DOCTYPE html><html lang="en">' + content_str(content) + '</html>'

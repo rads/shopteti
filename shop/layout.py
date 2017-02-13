@@ -8,10 +8,14 @@ def html(content):
             stylesheets()
         ]),
         body('', [
+            logo(),
             nav_bar.html(),
             content
         ])
     ])
+
+def logo():
+    return h1('class="Logo"', 'Teti')
 
 def stylesheets():
     return link('rel="stylesheet" href="/static/style.css"')
