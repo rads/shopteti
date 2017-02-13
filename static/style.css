@@ -1,3 +1,18 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.NavBar {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+
+.Logo {
+  float: left;
+}
+
 .Logo a {
   display: block;
   width: 229px;
@@ -6,3 +21,22 @@
   background-size: 100%;
   text-indent: -5000px;
 }
+
+.Menu {
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.Menu li {
+  display: inline-block;
+  font-size: 26px;
+  margin-right: 16px;
+  vertical-align: bottom;
+  height: 100%;
+}
+
+.SocialMediaLinks {
+  float: right;
+}
+
