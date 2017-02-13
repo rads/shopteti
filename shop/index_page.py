@@ -7,8 +7,5 @@ def html():
         lookbook()
     ])
 
-def social_media_links():
-    return div('', 'social media links')
-
 def lookbook():
 	return div("class='Lookbook'", 'Lookbook One')

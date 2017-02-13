@@ -15,7 +15,10 @@ def html(content):
     ])
 
 def logo():
-    return h1('class="Logo"', 'Teti')
+    return h1('class="Logo"', a('href="/"', 'Teti'))
+
+def social_media_links():
+    return div('', 'social media links')
 
 def stylesheets():
     return link('rel="stylesheet" href="/static/style.css"')

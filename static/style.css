@@ -1,7 +1,8 @@
-.Logo {
-  width: 250px;
-  height: 250px;
-  background: url(/static/logo.jpg) no-repeat;
+.Logo a {
+  display: block;
+  width: 229px;
+  height: 67px;
+  background: url(/static/logo2.png) no-repeat;
   background-size: 100%;
   text-indent: -5000px;
 }
