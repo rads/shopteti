@@ -1,9 +1,11 @@
 import requests
-import nav_bar
+import layout
 from html import *
 
 def html():
-	return nav_bar.html() + lookbook()
+	return layout.html([
+        lookbook()
+    ])
 
 def lookbook():
 	return div("class='Lookbook'", 'Lookbook One')
