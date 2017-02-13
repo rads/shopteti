@@ -8,8 +8,9 @@ def html(content):
             stylesheets()
         ]),
         body('', [
-            nav_bar.html()
-        ] + content)
+            nav_bar.html(),
+            content
+        ])
     ])
 
 def stylesheets():

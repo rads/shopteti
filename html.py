@@ -2,7 +2,7 @@
 
 def content_str(str_or_list):
     if isinstance(str_or_list, list):
-        return ''.join(str_or_list)
+        return ''.join(map(content_str, str_or_list))
     else:
         return str_or_list
 
