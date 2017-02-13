@@ -38,3 +38,6 @@ def h1(attributes, content):
 
 def html5(content):
     return '<!DOCTYPE html><html lang="en">' + content_str(content) + '</html>'
+
+def meta(attributes, content):
+	return '<meta ' + attributes + content_str(content) + '/>'
