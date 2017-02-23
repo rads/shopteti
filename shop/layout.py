@@ -18,5 +18,5 @@ def stylesheets():
     return link('rel="stylesheet" href="/static/style.css"')
 
 def google_verification():
-    return meta("name='google-site-verification'", "content='KVc0sJG_de4fYViq10IYiDAlJsloP6ZcxUxpXVhRj3s'")
+    return meta("name='google-site-verification' content='KVc0sJG_de4fYViq10IYiDAlJsloP6ZcxUxpXVhRj3s'")
 
