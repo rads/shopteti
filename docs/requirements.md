@@ -13,3 +13,7 @@
 - TODO: Must have social media links on top
 - DONE: Must have separate product page
 - DONE: Must have toolbar at top
+
+## February 22, 2017
+
+- DONE: Must have social media links on top

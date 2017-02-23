@@ -4,8 +4,9 @@ from html import *
 
 def html():
 	return layout.html([
-        lookbook()
+        lookbook(),
     ])
 
 def lookbook():
 	return div("class='Lookbook'", 'Lookbook One')
+

@@ -1,10 +1,11 @@
 from html import *
+import social_media_links
 
 def html():
     return div('class="NavBar"', [
         logo(),
         menu(),
-        social_media_links()
+        social_media_links.html()
     ])
 
 def logo():
@@ -15,7 +16,3 @@ def menu():
 		li(a("href='/'", 'Home')),
 		li(a("href='/products'", 'Products'))
 	])
-
-def social_media_links():
-    return div('class="SocialMediaLinks"', 'social media links')
-
