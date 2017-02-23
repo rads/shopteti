@@ -10,7 +10,8 @@ def html(content):
         ]),
         body('', [
             nav_bar.html(),
-            content
+            content,
+            scripts(),
         ])
     ])
 
@@ -20,3 +21,6 @@ def stylesheets():
 def google_verification():
     return meta("name='google-site-verification' content='KVc0sJG_de4fYViq10IYiDAlJsloP6ZcxUxpXVhRj3s'")
 
+def scripts():
+    # <script src="build.js"></script>
+    return script('src="/static/build.js"', '')

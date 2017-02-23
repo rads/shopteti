@@ -41,3 +41,6 @@ def html5(content):
 
 def meta(attributes):
 	return '<meta ' + attributes + '>'
+
+def script(attributes, content):
+	return '<script ' + attributes + '>' + content_str(content) + '</script>'
