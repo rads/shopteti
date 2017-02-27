@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cd `dirname $0`/..
+
+node_modules/.bin/watchify index.js -v -t [ babelify --presets [ es2015 react ] ] -o build.js

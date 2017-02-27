@@ -1,0 +1,12 @@
+{
+  "name": "shopteti",
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babelify": "^7.3.0",
+    "watchify": "^3.9.0"
+  }
+}
