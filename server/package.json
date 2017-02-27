@@ -1,8 +1,0 @@
-{
-  "name": "shopteti",
-  "private": true,
-  "version": "0.0.0",
-  "devDependencies": {
-    "babel-cli": "^6.23.0"
-  }
-}

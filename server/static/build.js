@@ -1,1 +1,1 @@
-alert('Hello world!');
+../../client/build.js
