@@ -9,9 +9,8 @@ def html(content):
             google_verification(),
         ]),
         body('', [
-            nav_bar.html(),
             content,
-            scripts(),
+            scripts()
         ])
     ])
 

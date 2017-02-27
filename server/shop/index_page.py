@@ -4,9 +4,5 @@ from html import *
 
 def html():
 	return layout.html([
-        lookbook(),
+        div("id='Container'", '')
     ])
-
-def lookbook():
-	return div("class='Lookbook'", 'Lookbook One')
-

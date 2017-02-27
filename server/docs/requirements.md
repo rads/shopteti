@@ -17,3 +17,11 @@
 ## February 22, 2017
 
 - DONE: Must have social media links on top
+- TODO: Must have a dropdown menu on navigation bar
+
+## February 26, 2017
+
+- TODO: Must have menu categories based on inventory
+- TODO: Must have slideshow presentation of lookbook
+- TODO: Must have continual scrolling 
+- TODO: Must have social media links in the footer
