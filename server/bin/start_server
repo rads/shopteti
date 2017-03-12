@@ -4,4 +4,6 @@ if [ -f .env ]; then
 	source .env
 fi
 
+cd `dirname $0`/..
+
 gunicorn server:app
