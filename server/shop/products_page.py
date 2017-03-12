@@ -1,14 +1,10 @@
 import requests
 import layout
+import json
 
-def html(api_key):
-	json = get_data(api_key)
-	return layout.html([format_data(json)])
-
-def get_data(api_key):
-	response = requests.get('https://openapi.etsy.com/v2/shops/shopteti/listings/active?api_key='+ api_key + '&includes=Images')
-	json = response.json()
-	return json
+def html(response_text):
+	response_json = json.loads(response_text)
+	return layout.html([format_data(response_json)])
 
 def format_data(json):
 	results = json["results"]
