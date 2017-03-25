@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cd `dirname $0`/..
+
+node_modules/.bin/browserify index.jsx \
+  -v \
+  -t [ babelify --presets [ es2015 react ] ] \
+  --extension=.jsx \
+  -o build.js
