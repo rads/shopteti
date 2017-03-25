@@ -1,1 +1,1 @@
-web: ./server/bin/start_server
+web: ./client/bin/build && ./server/bin/start_server
